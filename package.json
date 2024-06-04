@@ -2,7 +2,9 @@
   "name": "@angular-monorepo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build-app": "nx build todo-app-amplify-gen-2"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.0.0",
