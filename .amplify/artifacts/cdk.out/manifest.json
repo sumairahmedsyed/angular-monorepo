@@ -22,7 +22,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/e6eafa48fedce12757be2ba75df26a629668b09dd9e2350f0ed4b9e1fa415b47.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/46c8dc7d8296c11c2e2d40991213bf87b335db5900a49bc19aaa90cee5726573.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -1045,6 +1045,72 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "awsAppsyncAdditionalAuthenticationTypes"
+          }
+        ],
+        "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/storage/amplifyTeamDrive/Bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyTeamDriveBucket28B5C701"
+          }
+        ],
+        "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/storage/amplifyTeamDrive/Bucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyTeamDriveBucketPolicy20828FCE"
+          }
+        ],
+        "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/storage/amplifyTeamDrive/Bucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyTeamDriveBucketAutoDeleteObjectsCustomResource671F9F2A"
+          }
+        ],
+        "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/storage/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/storage/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/storage/amplifyangularmonoreposourcessysandboxbac36286d3storageamplifyTeamDriveBucketE2B960B3Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyangularmonoreposourcessysandboxbac36286d3storageamplifyTeamDriveBucketE2B960B3Ref"
+          }
+        ],
+        "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/storage.NestedStack/storage.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storage0EC3F24A"
+          }
+        ],
+        "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/storageRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storageRegion"
+          }
+        ],
+        "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/bucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "bucketName"
           }
         ],
         "/amplify-angularmonoreposource-ssy-sandbox-bac36286d3/CDKMetadata/Default": [

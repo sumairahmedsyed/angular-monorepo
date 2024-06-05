@@ -404,7 +404,20 @@
         }
       }
     },
-    "e6eafa48fedce12757be2ba75df26a629668b09dd9e2350f0ed4b9e1fa415b47": {
+    "72c8c2e0e0596832f22c66f7b376c13598dc6d1c228ac0ba009e0985a5868491": {
+      "source": {
+        "path": "amplifyangularmonoreposourcessysandboxbac36286d3storage245C1C88.nested.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "72c8c2e0e0596832f22c66f7b376c13598dc6d1c228ac0ba009e0985a5868491.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "46c8dc7d8296c11c2e2d40991213bf87b335db5900a49bc19aaa90cee5726573": {
       "source": {
         "path": "amplify-angularmonoreposource-ssy-sandbox-bac36286d3.template.json",
         "packaging": "file"
@@ -412,7 +425,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "e6eafa48fedce12757be2ba75df26a629668b09dd9e2350f0ed4b9e1fa415b47.json",
+          "objectKey": "46c8dc7d8296c11c2e2d40991213bf87b335db5900a49bc19aaa90cee5726573.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }

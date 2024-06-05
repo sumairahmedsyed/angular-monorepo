@@ -33,6 +33,13 @@
     "amplifyApiModelSchemaS3Uri",
     "awsAppsyncAdditionalAuthenticationTypes"
    ]
+  },
+  "AWS::Amplify::Storage": {
+   "version": "1",
+   "stackOutputs": [
+    "storageRegion",
+    "bucketName"
+   ]
   }
  },
  "Outputs": {
@@ -154,6 +161,19 @@
   },
   "awsAppsyncAdditionalAuthenticationTypes": {
    "Value": "AWS_IAM"
+  },
+  "storageRegion": {
+   "Value": {
+    "Ref": "AWS::Region"
+   }
+  },
+  "bucketName": {
+   "Value": {
+    "Fn::GetAtt": [
+     "storage0EC3F24A",
+     "Outputs.amplifyangularmonoreposourcessysandboxbac36286d3storageamplifyTeamDriveBucketE2B960B3Ref"
+    ]
+   }
   }
  },
  "Resources": {
@@ -264,6 +284,48 @@
    "Metadata": {
     "aws:cdk:path": "amplify-angularmonoreposource-ssy-sandbox-bac36286d3/data.NestedStack/data.NestedStackResource",
     "aws:asset:path": "amplifyangularmonoreposourcessysandboxbac36286d3data450E45A8.nested.template.json",
+    "aws:asset:property": "TemplateURL"
+   }
+  },
+  "storage0EC3F24A": {
+   "Type": "AWS::CloudFormation::Stack",
+   "Properties": {
+    "Tags": [
+     {
+      "Key": "amplify:deployment-type",
+      "Value": "sandbox"
+     },
+     {
+      "Key": "created-by",
+      "Value": "amplify"
+     }
+    ],
+    "TemplateURL": {
+     "Fn::Join": [
+      "",
+      [
+       "https://s3.",
+       {
+        "Ref": "AWS::Region"
+       },
+       ".",
+       {
+        "Ref": "AWS::URLSuffix"
+       },
+       "/",
+       {
+        "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
+       },
+       "/72c8c2e0e0596832f22c66f7b376c13598dc6d1c228ac0ba009e0985a5868491.json"
+      ]
+     ]
+    }
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "amplify-angularmonoreposource-ssy-sandbox-bac36286d3/storage.NestedStack/storage.NestedStackResource",
+    "aws:asset:path": "amplifyangularmonoreposourcessysandboxbac36286d3storage245C1C88.nested.template.json",
     "aws:asset:property": "TemplateURL"
    }
   },
