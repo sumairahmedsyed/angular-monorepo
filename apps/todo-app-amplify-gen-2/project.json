@@ -22,7 +22,10 @@
             "input": "apps/todo-app-amplify-gen-2/public"
           }
         ],
-        "styles": ["apps/todo-app-amplify-gen-2/src/styles.scss"],
+        "styles": [
+          "node_modules/@aws-amplify/ui-angular/theme.css",
+          "apps/todo-app-amplify-gen-2/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
