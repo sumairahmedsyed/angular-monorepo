@@ -6,6 +6,7 @@
     <li
       *ngFor="let todo of todos;">
       {{ todo.content }}
+      <span (click)="onDeleteTodo(todo.id)"><i class="bi bi-x-circle"></i></span>
     </li>
   </ul>
   <div>

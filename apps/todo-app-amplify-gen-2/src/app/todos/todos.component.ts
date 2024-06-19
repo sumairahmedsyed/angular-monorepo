@@ -41,4 +41,14 @@ export class TodosComponent implements OnInit {
       console.error('error creating todos', error);
     }
   }
+
+  onDeleteTodo(id: string) {
+    console.log('deleting todo', id);
+    try {
+      client.models.Todo.delete({id});
+      this.todos = this.todos.filter((t) => t.id !== id);
+    } catch (error) {
+      console.error('error deleting todos', error);
+    }
+  }
 }
